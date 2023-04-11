@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link"
+        >Employee List</a
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="employees/new" routerLinkActive="active" class="nav-link"
+        >Add Employee</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<h1 class="text-center">{{ title }}</h1>
+<div class="container">
+  <button routerLink="" class="home">Home</button>
+  <button routerLink="/dashBoard" class="dash">Dash Board</button>
+  <button routerLink="/employees" class="emp">Employees</button>
+  
+  <router-outlet></router-outlet>
+</div>
+<!-- <footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved 2020 @JavaGuides</span>
+  </div> -->
+<!-- </footer> -->
